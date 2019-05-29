@@ -136,6 +136,23 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                   child: Text(
                       "The crypto-zoological agency Monarch faces off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah."),
+                ),
+                Container(
+                  padding: EdgeInsets.only(bottom: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      RaisedButton(
+                        shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(20.0)),
+                        color: Colors.blue,
+                        onPressed: () {},
+                        child: Text(
+                          "See More",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             ),
