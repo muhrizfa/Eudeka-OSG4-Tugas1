@@ -50,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           BorderRadius.vertical(top: Radius.circular(10.0)),
                       child: Image.network(
                         'https://picsum.photos/250?image=9',
+                        height: 200,
                         fit: BoxFit.cover,
                       ),
                     )),
