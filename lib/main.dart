@@ -63,22 +63,70 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text(
-                              "Sierra",
-                              style: TextStyle(fontSize: 25),
+                            Container(
+                              constraints: BoxConstraints(maxWidth: 200),
+                              child: Text(
+                                "Godzilla: King of the Monsters (2019)",
+                                style: TextStyle(fontSize: 25),
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            Row(
+                              children: <Widget>[
+                                Text(
+                                  "13+",
+                                  style: TextStyle(
+                                      color: Colors.black54, fontSize: 15),
+                                ),
+                                SizedBox(width: 10),
+                                Text(
+                                  "2h 11min",
+                                  style: TextStyle(
+                                      color: Colors.black54, fontSize: 15),
+                                ),
+                              ],
                             ),
                             Text(
-                              "20 September 2016",
+                              "Action, Adventure, Fantasy",
                               style: TextStyle(
                                   color: Colors.black54, fontSize: 15),
                             ),
                           ],
                         ),
                       ),
-                      Text(
-                        "10.12",
-                        style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.bold),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow,
+                            size: 30,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                verticalDirection: VerticalDirection.up,
+                                children: <Widget>[
+                                  Text(
+                                    "8,3",
+                                    style: TextStyle(
+                                        fontSize: 30,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "/10",
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w200),
+                                  )
+                                ],
+                              ),
+                              Text("185")
+                            ],
+                          )
+                        ],
                       )
                     ],
                   ),
@@ -86,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                   child: Text(
-                      "Justo amet duo est dolor voluptua amet, diam lorem vero no aliquyam diam et kasd, magna nonumy dolor duo at."),
+                      "The crypto-zoological agency Monarch faces off against a battery of god-sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah."),
                 )
               ],
             ),
