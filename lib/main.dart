@@ -19,6 +19,16 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
+  List<Map<String, dynamic>> users = [
+  { "Title"   : "Godzilla: King of the Monsters (2019)", 
+    "Age"    : "13+",
+    "Duration"  : "2h 12min",
+    "Genre"   : "Action, Adventure, Fantasy ",
+    "Rating"  : "6,7",
+    "Voters"  : "35.643",
+    "Description" : "https://m.media-amazon.com/images/M/MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+    },
+  ];
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -158,7 +168,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Container(
           child: ListView(
             scrollDirection: Axis.vertical,
-            children: <Widget>[content, content],
+            children: <Widget>[content, content, content, content, content],
           ),
         ));
   }
